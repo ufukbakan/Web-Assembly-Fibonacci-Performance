@@ -35,7 +35,7 @@ async function onloadFunc() {
         let startTime = performance.now();
         let result = callback();
         let endTime = performance.now();
-        return `============================\nResult is: ${result}\n${getFunctionName(callback.name)} calculation time: ${endTime - startTime}`;
+        return `============================\nResult is: ${result}\n${getFunctionName(callback.name)} calculation time: ${endTime - startTime} ms`;
     }
 
     function getFunctionName(x){
