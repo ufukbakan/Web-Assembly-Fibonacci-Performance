@@ -17,7 +17,7 @@ async function onloadFunc() {
         env: {
             __memory_base: 0,
             __table_base: 0,
-            memory: new WebAssembly.Memory({ initial: 1, maximum: 10, shared: true }),
+            memory: new WebAssembly.Memory({ initial: 100, maximum: 200, shared: true }),
         }
     };
 
